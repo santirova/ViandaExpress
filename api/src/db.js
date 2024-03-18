@@ -1,4 +1,5 @@
 require('dotenv').config();
+const pg = require('pg');
 const { Sequelize } = require('sequelize');
 const UserFunction = require("./models/User.js");
 const ReviewFunction = require("./models/Review.js");
