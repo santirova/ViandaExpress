@@ -14,6 +14,7 @@ const sequelize = new Sequelize(
   { 
     logging: false,
     dialectModule: pg,
+    ssl: true,
   }
 );
 
