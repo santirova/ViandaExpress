@@ -1,5 +1,5 @@
 require('dotenv').config();
-const pg = require('pg');
+// const pg = require('pg');
 const { Sequelize } = require('sequelize');
 const UserFunction = require("./models/User.js");
 const ReviewFunction = require("./models/Review.js");
@@ -13,7 +13,7 @@ const sequelize = new Sequelize(
   `${DB_URL}`,
   { 
     logging: false,
-    dialectModule: pg,
+    // dialectModule: pg,
   }
 );
 
